@@ -3,6 +3,7 @@
 #include <windows.h>
 #include "menu.h"
 #include "levoria.h"
+#include "time.h" // Для проверки состояния таймера
 
 void menu_loop() {
     int menu_position = 1;
@@ -90,6 +91,8 @@ void menu_loop() {
                     }
                 }
 
+                start_timer(); // Запуск таймера
+
                 record(log, day, month, year, 1);
 
                 // Рассчёт аркана
@@ -131,11 +134,11 @@ void menu_loop() {
                 _getch();
             }
             else if (menu_position == 3) {
-
+                print_time(); // Вывод времени
                 _getch();
             }
             else if (menu_position == 4) {
-
+                stop_timer(); // Останов таймера
                 break;
             }
         }

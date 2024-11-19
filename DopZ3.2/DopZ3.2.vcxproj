@@ -130,10 +130,12 @@
     <ClCompile Include="DopZ3.2.cpp" />
     <ClCompile Include="levoria.cpp" />
     <ClCompile Include="menu.cpp" />
+    <ClCompile Include="time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="levoria.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
